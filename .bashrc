@@ -12,6 +12,7 @@ alias grep='grep --color=auto'
 alias vi='nvim'
 alias vim='nvim'
 
+alias tmux="TERM=screen-256color tmux"
 
 PS1='[\u@\h \W]\$ '
 
