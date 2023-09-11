@@ -39,6 +39,7 @@ require("lazy").setup({
     require("plugin.lsp.fidget"),
     require("plugin.lsp.mason"),
     require("plugin.lsp.mason-lspconfig"),
+    require("plugin.lsp.mason-tool-installer"),
     require("plugin.lsp.lspsaga"),
     require("plugin.lsp.null-ls"),
     require("plugin.lsp.symbols-outline"),
