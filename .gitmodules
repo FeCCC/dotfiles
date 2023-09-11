@@ -1,3 +1,6 @@
 [submodule "dotfiles/.config/nvim"]
 	path = dotfiles/.config/nvim
 	url = git@github.com:FeCCC/nvim.git
+[submodule "/home/wl/.config/nvim"]
+	path = /home/wl/.config/nvim
+	url = git@github.com:FeCCC/nvim.git
