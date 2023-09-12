@@ -3,7 +3,7 @@ local onedark_theme = {
     'navarasu/onedark.nvim',
     config = function()
         require('onedark').setup {
-            style = 'darker'
+            style = 'dark'
         }
         require('onedark').load()
     end
