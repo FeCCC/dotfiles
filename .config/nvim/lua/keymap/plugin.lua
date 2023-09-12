@@ -22,10 +22,8 @@ map("n", "<leader>l", ":BufferLineCycleNext<CR>", silents)
 map("n", "<leader>p", ":BufferLinePick<CR>", silents)
 map("n", "<leader>mh", ":BufferLineMovePrev<CR>", silents)
 map("n", "<leader>ml", ":BufferLineMoveNext<CR>", silents)
-map("n", "<leader>cl", ":BufferLineCloseLeft<CR>", silents)
-map("n", "<leader>cl", ":BufferLineCloseLeft<CR>", silents)
-map("n", "<leader>cl", ":BufferLineCloseLeft<CR>", silents)
-map("n", "<leader>cr", ":BufferLineCloseRight<CR>", silents)
+map("n", "<leader>ch", ":BufferLineCloseLeft<CR>", silents)
+map("n", "<leader>cl", ":BufferLineCloseRight<CR>", silents)
 map("n", "<leader>ca", ":BufferLineCloseRight<CR>:BufferLineCloseLeft<CR>", silents)
 
 
