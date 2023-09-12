@@ -61,7 +61,7 @@ autoload -Uz _zinit
 ### End of Zinit's installer chunk
 
 
-zinit light Aloxaf/fzf-tab
+# zinit light Aloxaf/fzf-tab
 
 zinit light zsh-users/zsh-autosuggestions
 zinit light zdharma-continuum/fast-syntax-highlighting
