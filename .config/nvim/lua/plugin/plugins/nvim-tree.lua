@@ -10,7 +10,7 @@ local nvim_tree_plugin = {
     version = "*",
     dependencies = { "nvim-tree/nvim-web-devicons" },
     config = function()
-        require("nvim-tree").setup {
+        require("nvim-tree").setup({
             auto_reload_on_write = true,
             create_in_closed_folder = false,
             disable_netrw = false,
@@ -18,9 +18,7 @@ local nvim_tree_plugin = {
             hijack_netrw = true,
             hijack_unnamed_buffer_when_opening = true,
             open_on_tab = false,
-            respect_buf_cwd = false,
             sort_by = "name",
-            sync_root_with_cwd = true,
             view = {
                 adaptive_size = false,
                 centralize_selection = false,
@@ -77,12 +75,12 @@ local nvim_tree_plugin = {
                         bookmark = icons.ui.Bookmark,
                         git = {
                             unstaged = icons.git.Mod_alt,
-                            staged = icons.git.Add,          --󰄬
+                            staged = icons.git.Add, --󰄬
                             unmerged = icons.git.Unmerged,
-                            renamed = icons.git.Rename,      --󰁔
+                            renamed = icons.git.Rename, --󰁔
                             untracked = icons.git.Untracked, -- "󰞋"
-                            deleted = icons.git.Remove,      --
-                            ignored = icons.git.Ignore,      --◌
+                            deleted = icons.git.Remove, --
+                            ignored = icons.git.Ignore, --◌
                         },
                         folder = {
                             arrow_open = icons.ui.ArrowOpen,
@@ -103,11 +101,14 @@ local nvim_tree_plugin = {
                 enable = true,
                 auto_open = true,
             },
+            -- project plugin 需要这样设置
+            sync_root_with_cwd = true,
+            respect_buf_cwd = true,
             update_focused_file = {
                 enable = true,
                 update_root = true,
-                ignore_list = {},
             },
+            -- end
             filters = {
                 dotfiles = false,
                 custom = { ".DS_Store" },
@@ -178,8 +179,8 @@ local nvim_tree_plugin = {
                     watcher = false,
                 },
             },
-        }
-    end
+        })
+    end,
 }
 
 return nvim_tree_plugin

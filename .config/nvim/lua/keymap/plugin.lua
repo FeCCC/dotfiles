@@ -13,6 +13,7 @@ vim.keymap.set('n', '<leader>fb', builtin.buffers, normal_opt)
 vim.keymap.set('n', '<leader>fh', builtin.help_tags, normal_opt)
 map("n", "<leader>fg", ":lua require('telescope').extensions.live_grep_args.live_grep_args()<CR>", silents)
 vim.keymap.set("n", "<leader>fd", "<cmd>GrepInDirectory<CR>", { noremap = true, silent = true })
+map("n", "<leader>fp", ":lua require'telescope'.extensions.projects.projects{}<CR>", silents)
 -- vim.keymap.set("n", "<leader>pd", "<cmd>FileInDirectory<CR>", { noremap = true, silent = true })
 
 --bufferline相关

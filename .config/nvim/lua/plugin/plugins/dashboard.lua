@@ -56,12 +56,12 @@ local dashboard_plugin = {
                     },
                     {
                         icon = ' ',
-                        desc = 'find buffer file',
+                        desc = 'Telescope projects',
                         desc_hl = 'String',
                         key = 'f',
-                        keymap = '<leader> f b',
+                        keymap = '<leader> f p',
                         key_hl = 'Number',
-                        action = require('telescope.builtin').buffers
+                        action = require('telescope').extensions.projects.projects
                     },
                 },
                 footer = {} --your footer
