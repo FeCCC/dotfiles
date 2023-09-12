@@ -20,6 +20,8 @@ map("n", "<leader>fp", ":lua require'telescope'.extensions.projects.projects{}<C
 map("n", "<leader>h", ":BufferLineCyclePrev<CR>", silents)
 map("n", "<leader>l", ":BufferLineCycleNext<CR>", silents)
 map("n", "<leader>p", ":BufferLinePick<CR>", silents)
+map("n", "<leader>mh", ":BufferLineMovePrev<CR>", silents)
+map("n", "<leader>ml", ":BufferLineMoveNext<CR>", silents)
 map("n", "<leader>cl", ":BufferLineCloseLeft<CR>", silents)
 map("n", "<leader>cl", ":BufferLineCloseLeft<CR>", silents)
 map("n", "<leader>cl", ":BufferLineCloseLeft<CR>", silents)
