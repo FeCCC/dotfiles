@@ -1,6 +1,6 @@
 local mason_tool_installer = {
     'WhoIsSethDaniel/mason-tool-installer.nvim',
-    requires = {
+    dependencies = {
         'williamboman/mason.nvim',
     },
     config = function()
