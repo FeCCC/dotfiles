@@ -1,5 +1,5 @@
---vim.g.encoding = "utf-8"            -- 设置编码utf8
---vim.o.fileencoding = "utf-8"        -- 设置编码utf8
+vim.g.encoding = "utf-8"            -- 设置编码utf8
+vim.o.fileencodings ="ucs-bom ,utf-8 ,cp936 ,gb18030 ,big5 ,euc-jp ,euc-kr ,latin1" -- 设置编码自动识别
 vim.o.wrap = false        -- 禁止折行显示文本
 vim.o.scrolloff = 8       -- 光标移动的时候始终保持 8 个空格的间隔
 vim.o.sidescrolloff = 8   -- 光标移动的时候始终保持 8 个空格的间隔
