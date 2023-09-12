@@ -25,7 +25,6 @@ alias grep='grep --color=auto'
 alias vi='nvim'
 alias vim='nvim'
 
-alias tmux="TERM=screen-256color tmux"
 
 export LANG="zh_CN.UTF-8"
 export LANGUAGE="zh_CN:zh:en_US:en"
