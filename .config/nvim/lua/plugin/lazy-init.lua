@@ -33,6 +33,7 @@ require("lazy").setup({
 	require("plugin.plugins.diffview"),
 	require("plugin.plugins.indentline"),
     require("plugin.plugins.auto-session"),
+    require("plugin.plugins.mywords"),
 
 	-- lsp
 	require("plugin.lsp.nvimcmp"),
