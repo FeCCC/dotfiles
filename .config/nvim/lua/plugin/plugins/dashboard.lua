@@ -45,7 +45,18 @@ local dashboard_plugin = {
                 }, --your header
                 center = {
                     {
-                        icon = " ",
+                        icon = "  ",
+                        icon_hl = "Title",
+                        desc = "Telescope sessions",
+                        desc_hl = "String",
+                        key = "s",
+                        keymap = "<leader> f s",
+                        key_hl = "Number",
+                        action = require("auto-session.session-lens").search_session,
+                    },
+                    {
+                        icon = "  ",
+                        icon_hl = "Title",
                         desc = "Telescope projects",
                         desc_hl = "String",
                         key = "p",
@@ -54,9 +65,8 @@ local dashboard_plugin = {
                         action = require("telescope").extensions.projects.projects,
                     },
                     {
-                        icon = " ",
-                        icon_hl = "Title",
-                        desc = "Find File           ",
+                        icon = "󰍉  ",
+                        desc = "Find File",
                         desc_hl = "String",
                         key = "f",
                         keymap = "<leader> f f",

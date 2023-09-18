@@ -32,7 +32,7 @@ require("lazy").setup({
 	require("plugin.plugins.undotree"),
 	require("plugin.plugins.diffview"),
 	require("plugin.plugins.indentline"),
-	require("plugin.plugins.session-manager"),
+    require("plugin.plugins.auto-session"),
 
 	-- lsp
 	require("plugin.lsp.nvimcmp"),
