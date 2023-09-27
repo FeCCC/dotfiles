@@ -9,6 +9,8 @@ local mason_lsp = {
                 "pyright",
                 "yamlls",
                 "bashls",
+                "tsserver",
+                "eslint",
             }
         })
     end
