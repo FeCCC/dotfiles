@@ -19,12 +19,15 @@ local nvim_dap = {
                 -- end,
             },
         }
+
+        local mason_registry = require('mason-registry')
+        local codelldb = mason_registry.get_package("codelldb")
         dap.adapters.codelldb = {
             type = "server",
             port = "${port}",
             executable = {
                 -- CHANGE THIS to your absolute path!
-                command = "/home/miku/local/share/nvim/mason/packages/codelldb/extension/adapter/codelldb",
+                command = codelldb:get_install_path() .. "/extension/adapter/codelldb",
                 args = { "--port", "${port}" },
 
                 -- On windows you may have to uncomment this:
