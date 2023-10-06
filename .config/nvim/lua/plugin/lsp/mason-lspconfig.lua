@@ -11,9 +11,9 @@ local mason_lsp = {
                 "bashls",
                 "tsserver",
                 "eslint",
-            }
+            },
         })
-    end
+    end,
 }
 
 return mason_lsp

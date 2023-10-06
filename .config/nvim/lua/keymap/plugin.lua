@@ -64,7 +64,12 @@ map("n", "<leader>dh", ":DiffviewFileHistory ", silents)
 -- ⚠️ This will only work if Telescope.nvim is installed
 vim.keymap.set("n", "<leader>fs", require("auto-session.session-lens").search_session, silents)
 
-
 -- mywords
 map("n", "<leader>gl", ":lua require('mywords').hl_toggle()<CR>", silents)
 map("n", "<leader>gc", ":lua require('mywords').uhl_all()<CR>", silents)
+
+-- dap相关
+map("n", "<F5>", ":lua require'dap'.continue()<CR>", silents)
+map("n", "<leader>b", ":lua require'dap'.toggle_breakpoint()<CR>", silents)
+map("n", "<leader>i", ":lua require'dap'.step_into()<CR>", silents)
+map("n", "<leader>o", ":lua require'dap'.step_over()<CR>", silents)

@@ -1,15 +1,17 @@
 local mason_tool_installer = {
-    'WhoIsSethDaniel/mason-tool-installer.nvim',
+    "WhoIsSethDaniel/mason-tool-installer.nvim",
     dependencies = {
-        'williamboman/mason.nvim',
+        "williamboman/mason.nvim",
     },
     config = function()
-        require('mason-tool-installer').setup({
+        require("mason-tool-installer").setup({
             ensure_installed = {
-                'prettierd',
-                'black',
-                'beautysh',
-                'stylua',
+                "prettierd",
+                "black",
+                "beautysh",
+                "stylua",
+                "codelldb",
+                "debugpy",
             },
         })
     end,
