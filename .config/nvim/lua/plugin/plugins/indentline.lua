@@ -28,6 +28,20 @@ local indentline = {
         require("ibl").setup({
             whitespace = { highlight = { "Whitespace", "NonText" } },
             scope = { highlight = highlight },
+            exclude = {
+                filetypes = {
+                    "lspinfo",
+                    "packer",
+                    "checkhealth",
+                    "help",
+                    "man",
+                    "gitcommit",
+                    "TelescopePrompt",
+                    "TelescopeResults",
+                    "",
+                    "dashboard",
+                },
+            },
         })
 
         hooks.register(hooks.type.SCOPE_HIGHLIGHT, hooks.builtin.scope_highlight_from_extmark)
