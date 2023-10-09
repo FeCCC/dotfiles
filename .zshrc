@@ -39,6 +39,7 @@ export LC_MEASUREMENT="zh_CN.UTF-8"
 export LC_IDENTIFICATION="zh_CN.UTF-8"
 export LC_CTYPE="zh_CN.UTF-8"
 
+export GPG_TTY=$(tty)
 
 
 
