@@ -18,13 +18,17 @@ autoload -Uz compinit
 compinit
 # End of lines added by compinstall
 
+source $(dirname $0)/.rctools
+
 alias ls='ls --color=auto'
 alias ll='ls -l'
 alias la='ls -a'
 alias grep='grep --color=auto'
-alias vi='nvim'
-alias vim='nvim'
 
+if [ $(program_exists nvim) -eq 0 ]; then
+    alias vi='nvim'
+    alias vim='nvim'
+fi
 
 export LANG="zh_CN.UTF-8"
 export LANGUAGE="zh_CN:zh:en_US:en"
