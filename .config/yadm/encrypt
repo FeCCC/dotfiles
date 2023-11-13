@@ -1,3 +1,5 @@
 .ssh/id_github
 .ssh/id_github.pub
 .ssh/config
+.ssh/id_rsa_git_feccc
+.ssh/id_rsa_git_feccc.pub

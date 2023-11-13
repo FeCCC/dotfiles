@@ -33,3 +33,5 @@ export LC_ADDRESS="zh_CN.UTF-8"
 export LC_TELEPHONE="zh_CN.UTF-8"
 export LC_MEASUREMENT="zh_CN.UTF-8"
 export LC_IDENTIFICATION="zh_CN.UTF-8"
+
+export GPG_TTY=$(tty)
