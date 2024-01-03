@@ -5,7 +5,8 @@
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
-source $(dirname -- $0)/.rctools
+# source $(dirname -- $0)/.rctools
+source ~/.rctools
 
 alias ls='ls --color=auto'
 alias ll='ls -l'
@@ -35,3 +36,5 @@ export LC_MEASUREMENT="zh_CN.UTF-8"
 export LC_IDENTIFICATION="zh_CN.UTF-8"
 
 export GPG_TTY=$(tty)
+
+export PATH=$PATH:~/.cargo/bin

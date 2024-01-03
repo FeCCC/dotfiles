@@ -18,7 +18,8 @@ autoload -Uz compinit
 compinit
 # End of lines added by compinstall
 
-source $(dirname -- $0)/.rctools
+# source $(dirname -- $0)/.rctools
+source ~/.rctools
 
 alias ls='ls --color=auto'
 alias ll='ls -l'
