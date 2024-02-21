@@ -3,3 +3,6 @@
 .ssh/config
 .ssh/id_rsa_git_feccc
 .ssh/id_rsa_git_feccc.pub
+.ssh/id_hexo_rsa
+.ssh/id_hexo_rsa.pub
+.ssh/authorized_keys
