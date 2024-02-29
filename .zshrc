@@ -46,6 +46,7 @@ export LC_CTYPE="zh_CN.UTF-8"
 
 export GPG_TTY=$(tty)
 
+export LESSCHARSET=utf-8
 
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
