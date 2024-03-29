@@ -1,0 +1,11 @@
+[[language]]
+name = "c"
+language-id = "c"
+scope = "source.c"
+language-servers = ["clangd"]
+
+[[language]]
+name = "rust"
+scope = "source.rust"
+roots = ["Cargo.lock"]
+language-servers = ["rust-analyzer"]
