@@ -31,6 +31,10 @@ if [ $(program_exists nvim) -eq 0 ]; then
     alias vim='nvim'
 fi
 
+if [ -d ~/.cargo/bin ]; then
+    export PATH=$PATH:~/.cargo/bin
+fi
+
 export LANG="zh_CN.UTF-8"
 export LANGUAGE="zh_CN:zh:en_US:en"
 export LC_NUMERIC="zh_CN.UTF-8"
