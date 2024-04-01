@@ -7,8 +7,24 @@ bufferline = "multiple"
 color-modes = true
 
 [editor.statusline]
-left = ["mode", "spinner", "file-name", "read-only-indicator", "file-modification-indicator","version-control"]
-right = ["selections", "separator", "position", "separator", "file-encoding", "file-line-ending", "separator", "file-type"]
+left = [
+  "mode",
+  "spinner",
+  "file-name",
+  "read-only-indicator",
+  "file-modification-indicator",
+  "version-control",
+]
+right = [
+  "selections",
+  "separator",
+  "position",
+  "separator",
+  "file-encoding",
+  "file-line-ending",
+  "separator",
+  "file-type",
+]
 separator = "│"
 
 [editor.whitespace]
@@ -16,3 +32,6 @@ render = "all"
 
 [editor.indent-guides]
 render = true
+
+[keys.normal]
+"A-f" = ":format"

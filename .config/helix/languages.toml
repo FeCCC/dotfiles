@@ -9,3 +9,9 @@ name = "rust"
 scope = "source.rust"
 roots = ["Cargo.lock"]
 language-servers = ["rust-analyzer"]
+
+[[language]]
+name = "toml"
+auto-format = true
+language-servers = ["taplo"]
+formatter = { command = "taplo", args = ["fmt", "-"] }
