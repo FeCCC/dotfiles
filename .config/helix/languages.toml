@@ -15,3 +15,11 @@ name = "toml"
 auto-format = true
 language-servers = ["taplo"]
 formatter = { command = "taplo", args = ["fmt", "-"] }
+
+[[language]]
+name = "python"
+auto-format = true
+language-servers = ["pylsp"]
+
+[language-server.pylsp.config.pylsp]
+plugins.black.enabled = true
