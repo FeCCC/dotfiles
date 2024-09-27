@@ -31,6 +31,9 @@ if [ $(program_exists nvim) -eq 0 ]; then
     alias vim='nvim'
 fi
 
+bindkey "^A" vi-beginning-of-line
+bindkey "^E" vi-end-of-line
+
 if [ -d ~/.cargo/bin ]; then
     export PATH=$PATH:~/.cargo/bin
 fi
